@@ -44,32 +44,32 @@ def getIt(num):
         # 使用 for 循环分析 post
         for post in posts:
                 # 打印数据
-                print '---返回数据如下---'
+                print '---Data---'
                 if post.hasAttribute('id'):
-                        print '\t[#]该图片ID为: %s' % post.getAttribute('id')
+                        print '\t[#]ID: %s' % post.getAttribute('id')
                 if post.hasAttribute("tags"):
-                        print '\t[#]该图片标签为: %s' % post.getAttribute('tags')
+                        print '\t[#]TAGS: %s' % post.getAttribute('tags')
                 if post.hasAttribute("md5"):
-                        print '\t[#]该图片MD5码为: %s' % post.getAttribute('md5')
+                        print '\t[#]MD5: %s' % post.getAttribute('md5')
                 if post.hasAttribute("file_size"):
-                        print '\t[#]该图片字节大小为: %s' % post.getAttribute('file_size')
+                        print '\t[#]BYETS: %s' % post.getAttribute('file_size')
                 if post.hasAttribute("file_ext"):
-                        print '\t[#]该图片类型为: %s' % post.getAttribute('file_ext')
+                        print '\t[#]TYPE: %s' % post.getAttribute('file_ext')
                 if post.hasAttribute("file_url"):
-                        print '\t[#]该图片储存地址为: %s' % post.getAttribute('file_url')
+                        print '\t[#]URL: %s' % post.getAttribute('file_url')
                 # 下载数据
-                print '---下载状态如下---'
-		print '\t[#]正在下载中...'
+                print '---Download---'
+		print '\t[#]Downloading...'
                 url = post.getAttribute('file_url')
                 md5 = post.getAttribute('md5')
                 savename = url.lstrip('https://files.yande.re/image/' + md5 + '/')
                 urllib.urlretrieve(url, './save/' + savename)
-                print '\t[#]完成下载'
+                print '\t[#]Done!'
 
 
 # 询问用户从第几页开始爬以及结束页码
-times = raw_input('从第几页开始爬取:')
-end = raw_input('到第几页结束爬取:')
+times = raw_input('To:')
+end = raw_input('From:')
 
 # while 循环来多次执行函数
 while times != end:
@@ -79,6 +79,5 @@ while times != end:
 	time.sleep(5)
 	# 自增数值
 	times = times + 1
-
 
 # 代码结束
