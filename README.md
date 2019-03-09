@@ -1,5 +1,5 @@
 # 这是什么玩意
-Yande.re 爬虫，采用 Python2.7 开发，使用 Yande.re 的API。乱写而成（笑）
+Yande.re 爬虫，采用 Python2.7 开发，使用 Yande.re 的API。乱写而成（笑）这玩意目前只能在 Windows 下运行。
 ## 这玩意的历史版本
 ### V1.0
 * 终于开发完了
@@ -8,10 +8,11 @@ Yande.re 爬虫，采用 Python2.7 开发，使用 Yande.re 的API。乱写而�
 ## 这玩意的一些特点
 * 使用 API 获取图片，不再是分析页面代码来 GET 到图片。
 * 恰 Python2.7 的饭。
+* 恰 Windows 的饭。
 * 好像没了。。。
 ## 怎么用这玩意
 * 首先，你确保你有 Python2.7 的环境。
 * 然后，`git clone https://github.com/Yazawazi/yandes`。
-* 最后， `python yande.py`。（在 Linux 环境下请使用`python2 yande.py`）
+* 最后， `python yande.py`。
 ## 这玩意好用吗
 个人用用海星，就是下载速度慢。
