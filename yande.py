@@ -68,8 +68,8 @@ def getIt(num):
 
 
 # 询问用户从第几页开始爬以及结束页码
-times = raw_input('To:')
-end = raw_input('From:')
+times = raw_input('From:')
+end = raw_input('To:')
 
 # while 循环来多次执行函数
 while times != end:
