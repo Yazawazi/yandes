@@ -70,6 +70,7 @@ def getIt(num):
 # 询问用户从第几页开始爬以及结束页码
 times = raw_input('From:')
 end = raw_input('To:')
+end = str(int(end) + 1)
 
 # while 循环来多次执行函数
 while times != end:
@@ -78,6 +79,6 @@ while times != end:
 	# 延迟一下
 	time.sleep(5)
 	# 自增数值
-	times = times + 1
+	times = str(int(times) + 1)
 
 # 代码结束
