@@ -15,7 +15,7 @@ from xml.dom.minidom import parse
 import xml.dom.minidom
 import sys
 reload(sys)
-sys.setdefaultencoding('gb18030')
+sys.setdefaultencoding('utf-8')
 
 # 定义函数
 def getIt(num):
