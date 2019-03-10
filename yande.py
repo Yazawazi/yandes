@@ -6,7 +6,6 @@ __author__ = 'Yazawazi'
 
 # 函数库调用（需要删去一些）
 import urllib
-import re
 import os
 import time
 import random
@@ -57,6 +56,11 @@ def getIt(num):
                         print '\t[#]TYPE: %s' % post.getAttribute('file_ext')
                 if post.hasAttribute("file_url"):
                         print '\t[#]URL: %s' % post.getAttribute('file_url')
+		if post.hasAttribute("preview_url"):
+			print '\t[#]PREVIEW URL: %s' % post.getAttribute("preview_url")
+		if post.hasAttribute("sample_url"):
+			print '\t[#]SAMPLE URL: %s' % post.getAttribute("sample_url")
+		
                 # 下载数据
                 print '---Download---'
 		print '\t[#]Downloading...'
