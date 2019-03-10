@@ -68,6 +68,7 @@ def getIt(num):
 
 
 # 询问用户从第几页开始爬以及结束页码
+print 'Yande.re Crawler --- V1.2 --- Yazawazi'
 times = raw_input('From:')
 end = raw_input('To:')
 end = str(int(end) + 1)
