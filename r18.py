@@ -57,14 +57,14 @@ def getIt(num):
                         print '\t[#]图片文件类型: %s' % post.getAttribute('file_ext')
                 if post.hasAttribute("file_url"):
                         print '\t[#]图片地址: %s' % post.getAttribute('file_url')
-				        if post.hasAttribute("preview_url"):
-						            print '\t[#]图片浏览地址: %s' % post.getAttribute("preview_url")
-				        if post.hasAttribute("sample_url"):
-						            print '\t[#]图片小图地址: %s' % post.getAttribute("sample_url")
+		if post.hasAttribute("preview_url"):
+			print '\t[#]图片浏览地址: %s' % post.getAttribute("preview_url")
+		if post.hasAttribute("sample_url"):
+			print '\t[#]图片小图地址: %s' % post.getAttribute("sample_url")
 		
                 # 下载数据
                 print '---下载信息---'
-				        print '\t[#]正在下载...'
+		print '\t[#]正在下载...'
                 url = post.getAttribute('file_url')
                 print '\t[#]已获取下载地址。'
                 md5 = post.getAttribute('md5')
